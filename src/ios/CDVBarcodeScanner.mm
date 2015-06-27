@@ -418,7 +418,7 @@ parentViewController:(UIViewController*)parentViewController
     
     
     AVCaptureDeviceInput* input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
-    if (!input) return @"unable to obtain video capture device input";
+    if (!input) return @"请在设置中打开本软件相机权限";
     
     AVCaptureVideoDataOutput* output = [[AVCaptureVideoDataOutput alloc] init];
     if (!output) return @"unable to obtain video capture output";
